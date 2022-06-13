@@ -21,3 +21,10 @@ If !FileExist(dir) {
    return
  }
 }
+;; the dir already exists and is unexpected.
+;; Ask user if we still want to use the directory.
+Else {
+  MsgBox, 4,, Exists, Directory already exists.`n`nWould you like to continue? (press Yes or No)
+  IfMsgBox No
+    return
+}
