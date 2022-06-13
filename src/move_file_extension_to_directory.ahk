@@ -28,3 +28,6 @@ Else {
   IfMsgBox No
     return
 }
+
+;; move the files
+FileMove %fromdir%\*.jpg,%dir%
