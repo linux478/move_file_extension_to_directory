@@ -12,3 +12,12 @@ if ErrorLevel
 
 ;; Directory to copy the files to
 dir = %todir%\(%UserInput%)
+
+;; If the dir does not exist, create it
+If !FileExist(dir) {
+ FileCreateDir, %dir%
+ If ErrorLevel {
+   MsgBox, 48, Error, An error occurred when creating the directory.`n`n%dir%
+   return
+ }
+}
