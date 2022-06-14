@@ -1,5 +1,5 @@
 ;; Directory to copy files from
-fromdir:="C:\Users\mphillips\Pictures\Camera Roll"
+fromdir=C:\Users\%A_UserName%\Pictures\Camera Roll
 
 ;; Directory parent to copy file to
 todir:="P:\Shipping - Pictures"
